@@ -29,7 +29,7 @@ git pull origin dev
 
 2. **Branch out for a feature**:
 ```Bash
-git checkout -b feat/api-integration
+git checkout -b feat/(EXAMPLE: api-integration )
 ```
 
 3. **Code and Commit**:
