@@ -25,26 +25,26 @@ function AdminHome() {
       title="Admin Dashboard"
       subtitle="Monitor service demand and resolve student requests from one workspace."
     >
-      <div className="stats-grid">
-        <Card>
-          <span className="stat-label">Total Requests</span>
-          <strong className="stat-value">{requests.length}</strong>
-        </Card>
-        <Card>
-          <span className="stat-label">Awaiting Review</span>
-          <strong className="stat-value pending">{pending}</strong>
-        </Card>
-        <Card>
-          <span className="stat-label">Approved</span>
-          <strong className="stat-value approved">{approved}</strong>
-        </Card>
-        <Card>
-          <span className="stat-label">Rejected</span>
-          <strong className="stat-value rejected">{rejected}</strong>
-        </Card>
-      </div>
+       <div className="stats-grid">
+         <Card className="bg-white rounded-lg shadow-md border border-gray-200 p-6 dark:bg-gray-800 dark:border-gray-700">
+           <span className="stat-label">Total Requests</span>
+           <strong className="stat-value">{requests.length}</strong>
+         </Card>
+         <Card className="bg-white rounded-lg shadow-md border border-gray-200 p-6 dark:bg-gray-800 dark:border-gray-700">
+           <span className="stat-label">Awaiting Review</span>
+           <strong className="stat-value pending">{pending}</strong>
+         </Card>
+         <Card className="bg-white rounded-lg shadow-md border border-gray-200 p-6 dark:bg-gray-800 dark:border-gray-700">
+           <span className="stat-label">Approved</span>
+           <strong className="stat-value approved">{approved}</strong>
+         </Card>
+         <Card className="bg-white rounded-lg shadow-md border border-gray-200 p-6 dark:bg-gray-800 dark:border-gray-700">
+           <span className="stat-label">Rejected</span>
+           <strong className="stat-value rejected">{rejected}</strong>
+         </Card>
+       </div>
 
-      <Card className="action-panel">
+       <Card className="action-panel bg-white rounded-lg shadow-md border border-gray-200 p-6 dark:bg-gray-800 dark:border-gray-700">
         <div>
           <h2>Requests waiting for a decision</h2>
           <p>Open the management queue to approve, reject, or delete requests.</p>

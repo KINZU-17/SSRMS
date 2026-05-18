@@ -4,7 +4,7 @@ const Sidebar = () => {
   const location = useLocation();
 
   const links = [
-    { name: 'Dashboard', path: '/'  },
+    { name: 'Dashboard', path: '/' },
     { name: 'New Request', path: '/submit' },
     { name: 'Admin Panel', path: '/admin' },
   ];
@@ -20,19 +20,18 @@ const Sidebar = () => {
           <Link
             key={link.path}
             to={link.path}
-            className={`flex items-center px-6 py-4 transition-colors ${
+            className={`flex items-center px-6 py-4 text-left transition-colors ${
               location.pathname === link.path 
-                ? 'bg-blue-600 border-r-4 border-white' 
-                : 'hover:bg-slate-800'
+                ? 'bg-blue-600 border-r-4 border-white text-white' 
+                : 'hover:bg-slate-800 hover:text-white'
             }`}
           >
-            <span className="mr-3">{link.icon}</span>
-            {link.name}
+            <span className="whitespace-nowrap">{link.name}</span>
           </Link>
         ))}
       </nav>
 
-      <div className="p-6 text-xs text-slate-500 border-t border-slate-700">
+      <div className="p-6 text-slate-300 border-t border-slate-700">
          2026 Student Services v1.0
       </div>
     </aside>

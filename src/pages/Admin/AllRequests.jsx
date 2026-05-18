@@ -18,7 +18,7 @@ function AllRequests() {
       title="All Requests"
       subtitle="Review every student service request in the system."
     >
-      <Card>
+       <Card className="bg-white rounded-lg shadow-md border border-gray-200 p-6 dark:bg-gray-800 dark:border-gray-700">
         <div className="table-wrap">
           <table className="request-table">
             <thead>
