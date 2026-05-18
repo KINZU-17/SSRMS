@@ -1,3 +1,85 @@
 {
-    "requests": []
+  "requests": [
+    {
+      "id": "1",
+      "title": "Hostel WiFi Connectivity Issues",
+      "description": "WiFi in hostel building B has been intermittent for the past 3 days, affecting online classes and research work.",
+      "category": "IT Support",
+      "priority": "High",
+      "status": "Approved",
+      "submittedBy": "Student",
+      "createdAt": "2026-05-15T08:30:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Library Book Request",
+      "description": "Request for purchase of latest edition of 'Introduction to Algorithms' for the computer science department.",
+      "category": "Library",
+      "priority": "Normal",
+      "status": "Approved",
+      "submittedBy": "Student",
+      "createdAt": "2026-05-14T14:15:00Z"
+    },
+    {
+      "id": "3",
+      "title": "Lost ID Card",
+      "description": "Lost my student ID card in the cafeteria yesterday afternoon. Need a replacement.",
+      "category": "Finance",
+      "priority": "High",
+      "status": "Rejected",
+      "submittedBy": "Student",
+      "createdAt": "2026-05-13T11:20:00Z"
+    },
+    {
+      "id": "4",
+      "title": "Classroom Projector Malfunction",
+      "description": "Projector in room 205 is not displaying properly - colors are distorted and there's a faint buzzing noise.",
+      "category": "Academics",
+      "priority": "High",
+      "status": "Pending",
+      "submittedBy": "Student",
+      "createdAt": "2026-05-16T09:45:00Z"
+    },
+    {
+      "id": "5",
+      "title": "Hostel Maintenance - Leaking Faucet",
+      "description": "Faucet in room 312 hostel has been leaking steadily for two days, causing water wastage.",
+      "category": "Hostel",
+      "priority": "Normal",
+      "status": "Pending",
+      "submittedBy": "Student",
+      "createdAt": "2026-05-16T16:30:00Z"
+    },
+    {
+      "id": "6",
+      "title": "Course Registration Issue",
+      "description": "Unable to register for Advanced Database Systems course due to prerequisite error, though I've completed the prerequisite.",
+      "category": "Academics",
+      "priority": "High",
+      "status": "Approved",
+      "submittedBy": "Student",
+      "createdAt": "2026-05-12T10:00:00Z"
+    },
+    {
+      "id": "7",
+      "title": "Request for Quiet Study Space",
+      "description": "Need access to a quiet study room during evening hours for exam preparation.",
+      "category": "Library",
+      "priority": "Low",
+      "status": "Pending",
+      "submittedBy": "Student",
+      "createdAt": "2026-05-17T07:15:00Z"
+    },
+    {
+      "id": "8",
+      "title": "Cafeteria Menu Feedback",
+      "description": "Request for more vegetarian options in the cafeteria menu and labeling of allergens.",
+      "category": "Finance",
+      "priority": "Low",
+      "status": "Approved",
+      "submittedBy": "Student",
+      "createdAt": "2026-05-11T13:45:00Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

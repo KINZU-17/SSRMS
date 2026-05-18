@@ -1,8 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
-import StudentDashboard from './pages/StudentDashboard';
-import SubmitRequest from './pages/SubmitRequest';
-import AdminPanel from './pages/AdminPanel';
+// Admin Pages
+import AdminHome from './pages/Admin/AdminHome.jsx';
+import AllRequests from './pages/Admin/AllRequests.jsx';
+import ManageRequests from './pages/Admin/ManageRequests.jsx';
+// Student Pages
+import StudentHome from './pages/Student/StudentHome.jsx';
+import SubmitRequest from './pages/Student/SubmitRequest.jsx';
+import MyRequests from './pages/Student/MyRequests.jsx';
+import RoleSelector from './pages/RoleSelector.jsx';
 
 function App() {
   return (
@@ -12,12 +18,19 @@ function App() {
         <Sidebar />
 
         {/* Main Content Area: Offset by the width of the sidebar */}
-        <main className="flex-1 ml-64 p-10 bg-gray-50 min-h-screen">
-          <div className="max-w-5xl mx-auto">
+        <main className="flex-1 ml-64 min-h-screen">
+          <div className="min-h-full p-10 bg-white rounded-lg shadow-md max-w-5xl mx-auto">
             <Routes>
-              <Route path="/" element={<StudentDashboard />} />
+              {/* Student Routes */}
+              <Route path="/" element={<StudentHome />} />
               <Route path="/submit" element={<SubmitRequest />} />
-              <Route path="/admin" element={<AdminPanel />} />
+              <Route path="/my-requests" element={<MyRequests />} />
+              <Route path="/role-select" element={<RoleSelector />} />
+
+              {/* Admin Routes */}
+              <Route path="/admin" element={<AdminHome />} />
+              <Route path="/admin/all-requests" element={<AllRequests />} />
+              <Route path="/admin/manage" element={<ManageRequests />} />
             </Routes>
           </div>
         </main>
@@ -26,4 +39,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
