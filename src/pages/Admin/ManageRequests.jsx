@@ -45,7 +45,7 @@ function ManageRequests() {
     >
       <div className="request-list">
         {requests.map((request) => (
-          <Card className="management-card" key={request.id}>
+           <Card className="management-card bg-white rounded-lg shadow-md border border-gray-200 p-6 dark:bg-gray-800 dark:border-gray-700" key={request.id}>
             <div className="management-main">
               <div>
                 <h2>{request.title}</h2>
@@ -74,11 +74,11 @@ function ManageRequests() {
           </Card>
         ))}
 
-        {requests.length === 0 && (
-          <Card>
-            <p className="empty-state">No requests are waiting in the queue.</p>
-          </Card>
-        )}
+         {requests.length === 0 && (
+           <Card className="bg-white rounded-lg shadow-md border border-gray-200 p-6 dark:bg-gray-800 dark:border-gray-700">
+             <p className="empty-state">No requests are waiting in the queue.</p>
+           </Card>
+         )}
       </div>
     </PortalLayout>
   );

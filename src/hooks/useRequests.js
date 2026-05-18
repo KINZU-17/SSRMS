@@ -17,7 +17,23 @@ export const useRequests = () => {
     }
   }, []);
 
-  useEffect(() => { refreshData(); }, [refreshData]);
+  useEffect(() => {
+    let isCancelled = false;
+    (async () => {
+      setIsLoading(true);
+      try {
+        const result = await requestService.getAll();
+        if (!isCancelled) setData(result);
+      } catch (err) {
+        console.error("Fetch error:", err);
+      } finally {
+        if (!isCancelled) setIsLoading(false);
+      }
+    })();
+    return () => {
+      isCancelled = true;
+    };
+  }, []);
 
   return { data, isLoading, refreshData };
 };

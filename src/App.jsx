@@ -18,8 +18,8 @@ function App() {
         <Sidebar />
 
         {/* Main Content Area: Offset by the width of the sidebar */}
-        <main className="flex-1 ml-64 p-10 bg-gray-50 min-h-screen">
-          <div className="max-w-5xl mx-auto">
+        <main className="flex-1 ml-64 min-h-screen">
+          <div className="min-h-full p-10 bg-white rounded-lg shadow-md max-w-5xl mx-auto">
             <Routes>
               {/* Student Routes */}
               <Route path="/" element={<StudentHome />} />
